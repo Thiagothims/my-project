@@ -1,0 +1,19 @@
+.divEvento {
+    margin: 15px;
+    display:flex;
+}
+
+.pEvento01 {
+    padding: 10px;        
+}
+
+.buttonEvento01 {
+    background-color: red;
+    border: solid 2px rgba(116, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    border-radius: 30px;
+    padding: 10px;
+}

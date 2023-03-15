@@ -1,0 +1,25 @@
+.PersonContainer {
+    margin: 10px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    border-radius: 15px;
+}
+
+.Nome {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 5px;
+    color: black;
+}
+
+.Atributos {
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.img {
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin: 10px;
+}
