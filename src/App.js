@@ -1,27 +1,40 @@
-import './App.css';
-import SayMyName from './components/SayMyName';
-import Person from './components/Person';
-import List from './components/List';
-import Evento01 from './components/Evento01';
-import Form from './components/Form';
 
 function App() {
   const name = 'Thiago'
 
-  return (
-    <>
-    
-    <div className="App">
-      {/* <SayMyName name={name}/>
-      <Person nome='Thiago' idade='30 anos' profissao='Estagiário em Desenvolvimento Web' foto='https://via.placeholder.com/150'/>
-      <List/> */}
+  const meusItens = ['JavaScript', 'Python', 'CSS', 'HTML', 'Java', 'Rubi', 'C++']
 
-      <Form/>
+  const [nome, setNome] = useState()
+
+
+  return (
+    
+     <>
+{/* --------------------------------------------------------------------------------------------------------------------------  */}
+       <div className='App'>
+         <h1>State Lift</h1>
+         <SeuNome setNome={setNome} />
+         <Saudacao nome={ nome }/>
+         {nome}
+       </div>
+ {/* ------------------------------------------------------------------------------------------------------------------------   */}
+    <div className='App'>
+      <h1>Renderização de listas</h1>
+      <List02 itens={meusItens}/>
+      <List02 itens={[]} />
     </div>
-      {/* <Evento01/> */}
+ {/* ------------------------------------------------------------------------------------------------------------------------- */}
+     <div className="App">
+       <SayMyName name={name}/>
+       <Person nome='Thiago' idade='30 anos' profissao='Estagiário em Desenvolvimento Web' foto='https://via.placeholder.com/150'/>
+       <List/>
+
+       <Form/>
+     </div>
+      <Evento01/>
       
-    </> 
-  );
+  </>
+  )
 }
 
 export default App;

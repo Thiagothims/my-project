@@ -5,7 +5,8 @@ function Form() {
     function cadastrarUsuario(event) {
        // let nome = 
         event.preventDefault()                  // faz com que o form não envie para o backend, deixa imprimir no console, ferramenta para ver o return
-        console.log(`Usuário ${name} foi cadastrado com sucesso!        // apresenta no console, mas o correto é enviar para o DB para efetivar
+        console.log(`Usuário ${name} foi cadastrado com sucesso!        
+        // apresenta no console, mas o correto é enviar para o DB para efetivar
         Senha válida: ${password}`)
         
     }
